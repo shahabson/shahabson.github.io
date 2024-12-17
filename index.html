@@ -1,120 +1,153 @@
 <!DOCTYPE HTML>
 <html lang="en">
   <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-
-    <title>Ahmad Mohammadi</title>
-
-    <meta name="author" content="Ahmad Mohammadi">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Ahmad Mohammadi">
+    <title>Ahmad Mohammadi | Privacy & Security Researcher</title>
     <link rel="shortcut icon" href="images/favicon/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" type="text/css" href="stylesheet.css">
-    
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+    <style>
+      body {
+        font-family: 'Roboto', sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f9f9f9;
+        color: #333;
+        line-height: 1.6;
+      }
+      a {
+        color: #1a0dab;
+        text-decoration: none;
+      }
+      a:hover {
+        text-decoration: underline;
+      }
+      .container {
+        max-width: 800px;
+        margin: 40px auto;
+        padding: 20px;
+        background: #fff;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+      }
+      .header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+      .header img {
+        border-radius: 50%;
+        width: 150px;
+        height: 150px;
+        object-fit: cover;
+      }
+      .header .name {
+        font-size: 2.5em;
+        font-weight: bold;
+        margin: 0;
+        color: #2c3e50;
+      }
+      .content p {
+        margin: 10px 0;
+      }
+      .content h2 {
+        border-bottom: 2px solid #007BFF;
+        padding-bottom: 5px;
+        margin-top: 30px;
+        color: #2c3e50;
+      }
+      .content .interests {
+        margin-top: 15px;
+        font-size: 1.1em;
+      }
+      .links {
+        text-align: center;
+        margin-top: 20px;
+      }
+      .links a {
+        margin: 0 10px;
+        font-weight: bold;
+        color: #007BFF;
+      }
+      .posts .post {
+        display: flex;
+        margin: 20px 0;
+        background: #f1f7ff;
+        padding: 15px;
+        border-radius: 8px;
+      }
+      .posts img {
+        max-width: 120px;
+        margin-right: 15px;
+        border-radius: 8px;
+      }
+      .posts .post-content {
+        flex: 1;
+      }
+      footer {
+        text-align: center;
+        margin-top: 30px;
+        font-size: 0.9em;
+        color: #888;
+      }
+    </style>
   </head>
-
   <body>
-    <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-      <tr style="padding:0px">
-        <td style="padding:0px">
-          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-            <tr style="padding:0px">
-              <td style="padding:2.5%;width:63%;vertical-align:middle">
-                <p class="name" style="text-align: center;">
-                  Ahmad Mohammadi
-                </p>
-                <p>I'm a Privacy and Security researcher at <a href="https://sharif.ir/">Sharif University of Technology</a>
-                </p>
-                <p>
-                   I'm interested in data privacy in particular the Differential Privacy. I am also interested in machine learning privacy. My current research project is focused on privacy preserving in local setting using differential privacy under correlated data.
-                </p>
-                <p style="text-align:center">
-                  <a href="mailto:ahmad.mohammadi@sharif.edu">Email</a> &nbsp;/&nbsp;
-                  <a href="data/AhmadMohammadi_CV.pdf">CV</a> &nbsp;/&nbsp;
-                  <a href="data/Ahmad-bio.txt">Bio</a> &nbsp;/&nbsp;
-                  <a href="https://scholar.google.com/citations?user=BPQ_ZjYAAAAJ&hl=en">Scholar</a> &nbsp;/&nbsp;
-                  <a href="https://www.linkedin.com/in/ahmad-mohammadi-58329040/">Linkedin</a> &nbsp;/&nbsp;
-                  <a href="https://github.com/shahabson">Github</a>
-                </p>
-              </td>
-              <td style="padding:2.5%;width:40%;max-width:40%">
-                <a href="images/mohammadi.jpg"><img style="width:100%;max-width:100%;object-fit: cover; border-radius: 50%;" alt="profile photo" src="images/mohammadi.jpg" class="hoverZoomLink"></a>
-              </td>
-            </tr>
-          </tbody></table>
-          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-              <tr>
-              <td style="padding:20px;width:100%;vertical-align:middle">
-                <h2>Posts</h2>
-              </td>
-            </tr>
-          </tbody></table>
-          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-
-
-<!--     <tr onmouseout="cat3d_stop()" onmouseover="cat3d_start()" bgcolor="#ffffd0"> -->
-    <tr bgcolor="#DBE9FA">
-      <td style="padding:20px;width:25%;vertical-align:middle">
-        <div class="one">
-<!--           <div class="two" id='cat3d_image'><video  width=100% height=100% muted autoplay loop>
-          <source src="images/cat3d.mp4" type="video/mp4">
-          Your browser does not support the video tag.
-          </video></div> -->
-          <img src='images/privacy.jpg' width="160">
+    <div class="container">
+      <!-- Header -->
+      <div class="header">
+        <div>
+          <p class="name">Ahmad Mohammadi</p>
+          <p>Privacy & Security Researcher at <a href="https://sharif.ir/">Sharif University of Technology</a></p>
         </div>
-<!--         <script type="text/javascript">
-          function cat3d_start() {
-            document.getElementById('cat3d_image').style.opacity = "1";
-          }
+        <img src="images/mohammadi.jpg" alt="Ahmad Mohammadi">
+      </div>
 
-          function cat3d_stop() {
-            document.getElementById('cat3d_image').style.opacity = "0";
-          }
-          cat3d_stop()
-        </script> -->
-      </td>
-      <td style="padding:20px;width:75%;vertical-align:middle">
-        <a href="posts/p1.html">
-			<span class="papertitle">Why differential privacy is awesome
-
-</span>
-        </a>
-        <br>
-<!-- 				<a href="https://ruiqigao.github.io/">Ruiqi Gao</a>*,
-        <a href="https://holynski.org/">Aleksander Holynski</a>*, 
-        <a href="https://henzler.github.io/">Philipp Henzler</a>,
-        <a href="https://github.com/ArthurBrussee">Arthur Brussee</a>, 
-				<a href="http://ricardomartinbrualla.com/">Ricardo Martin Brualla</a>, 
-        <a href="https://pratulsrinivasan.github.io/">Pratul P. Srinivasan</a>,
-				<strong>Jonathan T. Barron</strong>,
-        <a href="https://poolio.github.io/">Ben Poole</a>*
-
-        <br>
-        <em>NeurIPS</em>, 2024 &nbsp <font color="red"><strong>(Oral Presentation)</strong></font>
-        <br>
-        <a href="https://cat3d.github.io/">project page</a>
-        /
-        <a href="https://arxiv.org/abs/2405.10314">arXiv</a>
-        <p></p> -->
+      <!-- Content -->
+      <div class="content">
         <p>
-		This article provides an introduction to differential privacy, explaining its core concepts and why it has become the go-to standard for privacy-preserving data publishing.
+          I'm a researcher with a strong interest in data privacy, particularly <strong>Differential Privacy</strong> and privacy-preserving methods in machine learning. My current work focuses on developing local differential privacy mechanisms for correlated data, balancing utility and privacy in data systems.
         </p>
-      </td>
-    </tr>
+        <h2>Research Interests</h2>
+        <p class="interests">
+          - Differential Privacy <br>
+          - Data Privacy & Security <br>
+          - Privacy-Preserving Machine Learning <br>
+          - Federated Learning & Local Differential Privacy
+        </p>
 
-            
-          </tbody></table>
-          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-            <tr>
-              <td style="padding:0px">
-                <br>
-                <p style="text-align:left;font-size:small;">
-                  Feel free to steal this website's <a href="https://github.com/shahabson/shahabson.github.io">source code</a>.
-                </p>
-              </td>
-            </tr>
-          </tbody></table>
-        </td>
-      </tr>
-    </table>
+        <!-- Links -->
+        <div class="links">
+          <a href="mailto:ahmad.mohammadi@sharif.edu">Email</a>
+          <a href="data/AhmadMohammadi_CV.pdf">CV</a>
+          <a href="data/Ahmad-bio.txt">Bio</a>
+          <a href="https://scholar.google.com/citations?user=BPQ_ZjYAAAAJ&hl=en">Scholar</a>
+          <a href="https://www.linkedin.com/in/ahmad-mohammadi-58329040/">LinkedIn</a>
+          <a href="https://github.com/shahabson">GitHub</a>
+        </div>
+
+        <!-- Posts -->
+        <h2>Posts</h2>
+        <div class="posts">
+          <div class="post">
+            <img src="images/privacy.jpg" alt="Differential Privacy">
+            <div class="post-content">
+              <a href="posts/p1.html"><strong>Why Differential Privacy is Awesome</strong></a>
+              <p>
+                An introduction to differential privacy, explaining its core concepts and its role as the standard for privacy-preserving data publishing.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer -->
+      <footer>
+        <p>
+          Feel free to use this website's <a href="https://github.com/shahabson/shahabson.github.io">source code</a>.
+        </p>
+      </footer>
+    </div>
   </body>
 </html>
