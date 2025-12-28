@@ -1,0 +1,224 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Ahmad Mohammadi">
+    <title>LLM Privacy Research in 2025: Analysis of 371 Papers | Ahmad Mohammadi</title>
+    <meta name="description" content="Comprehensive analysis of LLM privacy research across top ML, NLP, and Security conferences in 2025.">
+    <link rel="shortcut icon" href="../images/favicon/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+    <style>
+      body {
+        font-family: 'Roboto', sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f9f9f9;
+        color: #333;
+        line-height: 1.6;
+      }
+      a {
+        color: #1a0dab;
+        text-decoration: none;
+      }
+      a:hover {
+        text-decoration: underline;
+      }
+      .container {
+        max-width: 800px;
+        margin: 40px auto;
+        padding: 20px;
+        background: #fff;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+      }
+      .back-link {
+        color: #007BFF;
+        font-weight: bold;
+        margin-bottom: 20px;
+        display: inline-block;
+      }
+      h1 {
+        font-size: 2.2em;
+        color: #2c3e50;
+        margin-bottom: 10px;
+      }
+      .meta {
+        color: #888;
+        font-size: 0.95em;
+        margin-bottom: 30px;
+      }
+      h2 {
+        border-bottom: 2px solid #007BFF;
+        padding-bottom: 5px;
+        margin-top: 30px;
+        color: #2c3e50;
+      }
+      .key-finding {
+        background: #f1f7ff;
+        padding: 15px;
+        border-left: 4px solid #007BFF;
+        margin: 15px 0;
+        border-radius: 5px;
+      }
+      .key-finding strong {
+        color: #2c3e50;
+        font-size: 1.1em;
+      }
+      .download-btn {
+        display: inline-block;
+        background: #007BFF;
+        color: white;
+        padding: 12px 30px;
+        border-radius: 5px;
+        font-weight: bold;
+        margin: 20px 0;
+        text-align: center;
+      }
+      .download-btn:hover {
+        background: #0056b3;
+        text-decoration: none;
+      }
+      .stats {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 15px;
+        margin: 20px 0;
+      }
+      .stat-box {
+        background: #f8f9fa;
+        padding: 15px;
+        border-radius: 8px;
+        text-align: center;
+        border: 1px solid #dee2e6;
+      }
+      .stat-box .number {
+        font-size: 2em;
+        font-weight: bold;
+        color: #007BFF;
+      }
+      .stat-box .label {
+        color: #666;
+        font-size: 0.9em;
+      }
+      footer {
+        text-align: center;
+        margin-top: 50px;
+        padding-top: 20px;
+        border-top: 1px solid #dee2e6;
+        font-size: 0.9em;
+        color: #888;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <a href="../index.html" class="back-link">← Back to Home</a>
+      
+      <h1>LLM Privacy in 2025: What Are Researchers Actually Working On?</h1>
+      <p class="meta">December 28, 2025 • Ahmad Mohammadi</p>
+
+      <p>
+        I analyzed 371 LLM privacy papers from 2025's top ML, NLP, and Security conferences to understand 
+        what the research community is actually focusing on. The findings reveal some surprising gaps and trends 
+        in how we're approaching privacy in large language models.
+      </p>
+
+      <a href="../data/llm-privacy-2025-presentation.pdf" class="download-btn" download>
+        📊 Download Full Presentation (PDF)
+      </a>
+
+      <h2>Dataset Overview</h2>
+      <div class="stats">
+        <div class="stat-box">
+          <div class="number">32,855</div>
+          <div class="label">Papers Analyzed</div>
+        </div>
+        <div class="stat-box">
+          <div class="number">371</div>
+          <div class="label">Relevant LLM Privacy Papers</div>
+        </div>
+        <div class="stat-box">
+          <div class="number">10</div>
+          <div class="label">Top Conferences</div>
+        </div>
+      </div>
+
+      <p>
+        I used Claude Sonnet 4.5 to extract structured taxonomy from papers across ICLR, NeurIPS, ICML, 
+        ACL, EMNLP, NAACL, USENIX Security, IEEE S&P, ACM CCS, and NDSS. Each paper was classified across 
+        6 dimensions: contribution type, privacy framework, threat model, methodology, privacy incident, and lifecycle stage.
+      </p>
+
+      <h2>Key Findings</h2>
+
+      <div class="key-finding">
+        <strong>1. Defense Work Dominates (Unlike Traditional ML Privacy)</strong>
+        <p>
+          Defense papers outnumber attacks 2:1 (53.9% vs 25.9%). This is the opposite of traditional ML privacy 
+          research where attacks dominated. The field seems more focused on building protections than understanding vulnerabilities.
+        </p>
+      </div>
+
+      <div class="key-finding">
+        <strong>2. Severe Lack of Theoretical Foundations</strong>
+        <p>
+          Only 0.8% of papers use theoretical methodology. We're building an entire research field on purely 
+          empirical foundations with almost zero formal theory backing it up.
+        </p>
+      </div>
+
+      <div class="key-finding">
+        <strong>3. Narrow Focus on Training Data Leakage</strong>
+        <p>
+          67% of papers focus exclusively on training data leakage and memorization. Other privacy incidents 
+          like attribute inference, context leakage, and aggregation attacks? Barely researched (each <11%).
+        </p>
+      </div>
+
+      <div class="key-finding">
+        <strong>4. Formal Privacy Frameworks Rarely Applied</strong>
+        <p>
+          90% of LLM privacy research operates without any formal privacy framework. Only 9.7% use differential 
+          privacy, LDP, or DP-SGD—meaning most work lacks mathematical privacy guarantees.
+        </p>
+      </div>
+
+      <div class="key-finding">
+        <strong>5. Machine Unlearning is the Hottest Topic</strong>
+        <p>
+          15% of papers (56 papers) focus on machine unlearning, driven by GDPR compliance and data deletion 
+          requirements. This has emerged as the dominant research trend.
+        </p>
+      </div>
+
+      <div class="key-finding">
+        <strong>6. Training Phase Severely Under-Researched</strong>
+        <p>
+          Research heavily focuses on inference (36.8%) and post-deployment (27.8%), while the training phase 
+          gets only 10.5% attention. Pre-training? Just 5.4%.
+        </p>
+      </div>
+
+      <div class="key-finding">
+        <strong>7. Black-Box Threat Models Dominate</strong>
+        <p>
+          73.3% assume black-box adversaries with only API access, reflecting practical deployment scenarios 
+          but potentially missing important attack vectors that require model access.
+        </p>
+      </div>
+
+      <h2>Methodology</h2>
+      <p>
+        The analysis used a two-stage automated labeling pipeline powered by Claude Sonnet 4.5:
+      </p>
+      <ol>
+        <li><strong>Stage 1 - Binary Relevance Filtering:</strong> Filtered 32,855 papers down to 3,203 candidates using keyword matching, then to 380 relevant papers using few-shot classification.</li>
+        <li><strong>Stage 2 - Deep Taxonomy Extraction:</strong> Extracted 6 taxonomy dimensions plus keywords from all 371 papers using structured prompting with few-shot examples.</li>
+      </ol>
+      <p>
+        Total cost: €23 (€16 for Stage 1, €7 for Stage 2). Prompt caching reduced costs by 90%.
+      </p>
+
+      <h2>Research Gaps & Opportunities</h2>
+      <p>The analysis reveals critical gaps that rep
